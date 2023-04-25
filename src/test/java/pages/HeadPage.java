@@ -39,12 +39,12 @@ public class HeadPage {
         return this;
     }
 
-    public HeadPage checkButtonVisibility(){
+    public HeadPage checkButtonVisibility() {
         $(".fr-hidden-xs").shouldBe(visible);
         return this;
     }
 
-    public HeadPage checkBackgroundColor(){
+    public HeadPage checkBackgroundColor() {
         assertThat($(".fr-hidden-xs").getCssValue("background-color")).isEqualTo(BACK_GROUND_OUT_OF_FOCUS);
         $(".fr-hidden-xs").hover();
         sleep(100);
@@ -52,7 +52,7 @@ public class HeadPage {
         return this;
     }
 
-    public HeadPage checkButtonLink(){
+    public HeadPage checkButtonLink() {
         $(".fr-hidden-xs").shouldHave(attribute("href", "https://cp.abcp.ru/"));
         return this;
     }

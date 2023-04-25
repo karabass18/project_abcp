@@ -15,9 +15,10 @@ public class HeadMenuTests extends TestsBase {
     }
 
     @Test
-    public void checkDropMenu(){
+    public void checkDropMenu() {
         headMenuPage
-                .checkAppearance();
+                .checkAppearance()
+                .checkDropMenuContent();
 
     }
 }
