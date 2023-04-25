@@ -29,6 +29,8 @@ public class TestsBase {
         Configuration.baseUrl = "https://abcp.ru/";
 
 
+
+
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);

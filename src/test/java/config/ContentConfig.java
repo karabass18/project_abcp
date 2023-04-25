@@ -12,4 +12,7 @@ public interface ContentConfig extends Config {
     @Key("headLinksText")
     String[] getHeadLinksText();
 
+    @Key("headMenuTabs")
+    String[] getHeadMenuTabs();
+
 }
